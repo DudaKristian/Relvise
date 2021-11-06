@@ -13,16 +13,41 @@
   </head>
   <body>
     <header>
-      <div class="container header__container">
-        <nav class="header">
+      <div class="container header__container--padding">
+        <div class="header__container">
           <a href="#" class="header__logo">Relvise</a>
-          <ul class="header__navigation">
-            <li class="header__link"><a href="#">Home</a></li>
-            <li class="header__link"><a href="#">Product</a></li>
-            <li class="header__link"><a href="#">Pricing</a></li>
-            <li class="header__link"><a href="#">Contact</a></li>
+          <button class="mobile-menu__button js-open-menu js-close-menu">
+            <svg width="24" height="14">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <nav class="header">
+            <ul class="header__navigation">
+              <li class="header__link"><a href="#">Home</a></li>
+              <li class="header__link"><a href="#">Product</a></li>
+              <li class="header__link"><a href="#">Pricing</a></li>
+              <li class="header__link"><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="mobile-menu__overlay js-menu-container is-hidden">
+        <nav>
+          <ul class="mobile-menu__list">
+            <li class="mobile-menu__link"><a href="#">Home</a></li>
+            <li class="mobile-menu__link"><a href="#">Product</a></li>
+            <li class="mobile-menu__link"><a href="#">Pricing</a></li>
+            <li class="mobile-menu__link"><a href="#">Contact</a></li>
           </ul>
         </nav>
+        <h2 class="_section__title mobile-menu__title">Get In Touch</h2>
+        <ul>
+          <li class="mobile-menu__address"><a href="tel:+4805550103">(480) 555-0103</a></li>
+          <li class="mobile-menu__address"><a href="#">4517 Washington Ave.</a></li>
+          <li class="mobile-menu__address">
+            <a href="mailto:debra.holt@example.com">debra.holt@example.com</a>
+          </li>
+        </ul>
       </div>
     </header>
     <div class="container">
@@ -40,14 +65,23 @@
         <h2 class="visualy-hidden">Advantages</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
+            <svg class="advantages__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-case"></use>
+            </svg>
             <h3 class="advantages__title">Environmental Consulting</h3>
             <p class="advantages__text">We focus on ergonomics and meeting you where you work.</p>
           </li>
           <li class="advantages__item">
+            <svg class="advantages__icon" width="48" height="48">
+              <use href="./images/icons.svg#icon-shop"></use>
+            </svg>
             <h3 class="advantages__title">Finance and consultancy</h3>
             <p class="advantages__text">Just type what's on your mind and we'll get you there.</p>
           </li>
           <li class="advantages__item">
+            <svg class="advantages__icon advantages__icon--last" width="48" height="48">
+              <use href="./images/icons.svg#icon-book"></use>
+            </svg>
             <h3 class="advantages__title advantages__title--last">Financial Services Consulting</h3>
             <p class="advantages__text advantages__text--last">
               The quick fox jumps over the lazy dog
@@ -56,5 +90,12 @@
         </ul>
       </div>
     </section>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

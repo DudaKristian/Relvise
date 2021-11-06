@@ -1,13 +1,23 @@
+body {
+  background-image: url(../images/cover1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
 .header__container {
   padding: 0;
-}
-.header {
+
   display: flex;
   align-items: center;
 
   max-width: 520px;
+}
+.header__container--padding {
+  position: relative;
 
-  padding: 36px 15px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+.header {
 }
 .header__logo {
   @include fonts(700, 24px, 1.33, 0.1px);
@@ -17,7 +27,10 @@
   color: $primary-text-color;
 }
 .header__navigation {
-  display: flex;
+  display: none;
+  @media screen and (min-width: 480px) {
+    display: flex;
+  }
 }
 .header__link {
   & a {
