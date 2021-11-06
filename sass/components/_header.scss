@@ -1,0 +1,27 @@
+.header__container {
+  padding: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+
+  padding: 36px 15px;
+}
+.header__logo {
+  @include fonts(700, 24px, 1.33, 0.1px);
+
+  margin-right: 150px;
+}
+.header__navigation {
+  display: flex;
+}
+.header__link {
+  & a {
+    @include fonts(600, 14px, 1.71, 0.2px);
+
+    color: $secondary-text-color;
+  }
+  &:not(:last-child) {
+    margin-right: 21px;
+  }
+}

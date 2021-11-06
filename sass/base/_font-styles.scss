@@ -1,0 +1,10 @@
+._section__title {
+  @include fonts(700, 40px, 1.42, 0.2px);
+
+  color: $primary-text-color;
+}
+._section__subtitle {
+  @include fonts(500, 14px, 1.43, 0.2px);
+
+  color: $secondary-text-color;
+}

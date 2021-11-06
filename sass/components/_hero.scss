@@ -1,0 +1,46 @@
+.hero {
+  max-width: 510px;
+}
+.hero__title {
+  @include fonts(800, 58px, 1.38, 0.2px);
+
+  color: $primary-text-color;
+
+  margin-bottom: 35px;
+}
+.hero__text {
+  @include fonts(500, 20px, 1.5, 0.2px);
+
+  color: $secondary-text-color;
+  margin-bottom: 35px;
+}
+.hero_buttons {
+  display: flex;
+}
+.hero__button {
+  width: 185px;
+  height: 50px;
+
+  @include fonts(700, 14px, 2, 0.2);
+
+  color: $white-text-color;
+
+  background-color: $secondary-accent-color;
+  border-radius: 37px;
+  border-color: transparent;
+
+  margin-right: 10px;
+}
+.hero__link {
+  display: block;
+  width: 165px;
+  height: 50px;
+
+  padding: 10px 36px;
+
+  @include fonts(700, 14px, 2, 0);
+
+  color: $primary-accent-color;
+  border: 1px solid $primary-accent-color;
+  border-radius: 37px;
+}

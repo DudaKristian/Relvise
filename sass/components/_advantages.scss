@@ -1,0 +1,36 @@
+.advantages {
+}
+.advantages__list {
+  display: flex;
+  margin: -15px;
+}
+.advantages__item {
+  height: 100%;
+  padding: 40px 35px;
+
+  background-color: $white-text-color;
+  flex-basis: calc((1050px - 60px) / 3);
+  margin: 15px;
+
+  &:last-child {
+    background-color: $primary-accent-color;
+  }
+}
+.advantages__title {
+  @include fonts(700, 24px, 1.33, 0.1px);
+
+  color: $primary-text-color;
+
+  margin-bottom: 10px;
+  &--last {
+    color: $white-text-color;
+  }
+}
+.advantages__text {
+  @include fonts(500, 14px, 1.43, 0.2px);
+
+  color: $secondary-text-color;
+  &--last {
+    color: $white-text-color;
+  }
+}
